@@ -1,0 +1,328 @@
+/*------------------------------------------------------------------
+    Daryl C. Duremdes
+-------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    DEFAULTS
+-------------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  position:relative;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #aebcb9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cd-title {
+  position: relative;
+  height: 160px;
+  line-height: 230px;
+  text-align: center;
+}
+.cd-title h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .cd-title {
+    line-height: 250px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+.cd-intro {
+  width: 90%;
+  max-width: 768px;
+  text-align: center;
+}
+
+.cd-intro {
+  margin: 4em auto;
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro {
+    margin: 5em auto;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    margin: 6em auto;
+  }
+}
+
+.cd-headline {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 768px) {
+  .cd-headline {
+    font-size: 4.4rem;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-headline {
+    font-size: 6rem;
+  }
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+
+
+/* -------------------------------- 
+
+xclip 
+
+-------------------------------- */
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+/* OVERIDE */
+/*-----------------------------------------------------------------*/
+
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.navbar {
+
+}
+
+.navbar-dark{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar .navbar-brand {
+    padding-left: 40px;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.navbar a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+
+.navbar-nav {
+    padding-right: 80px;
+}
+
+
+.navbar li {
+    padding-right: 20px;
+}
+
+.navbar li a {
+    color: white;
+}
+
+/*------------------------------------------------------------------
+    JUMBOTRON
+-------------------------------------------------------------------*/
+
+.jumbotron {
+    position: relative;
+    background-image: url("../images/dada1.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+}
+
+.jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.jumbotron .inner {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron h1 {
+    color: #6bffce;
+    font-size: 1em;
+}
+
+.jumbotron .container {
+    padding-top: 15%;
+    padding-left: 100px;
+}
+
+
+.jumbotron .lead {
+    color: #6bffce;
+    font-size: 18px;
+}
+
+
+
+
+
+/*-------------------------
+    ANIMATION
+---------------------------*/
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------------
+  
+-------------------------------------------------------------------*/
+
+
+.test {
+  position: relative;
+  padding-top: 700px;
+  padding-left: 50px;
+  padding-bottom: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
