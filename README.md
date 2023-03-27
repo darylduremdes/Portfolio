@@ -1,2 +1,2 @@
 # Portfolio
- Portfolio - Dayl C. Duremdes
+ Daryl C Duremdes Portfolio
