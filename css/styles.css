@@ -4,13 +4,12 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0;
 }
 
 
 body {
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -112,6 +111,7 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
     background-attachment: fixed;
     position:relative;
     margin-top: -65px;
+    color: white;
 }
 
 #jOverlay{
@@ -127,8 +127,6 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 /* ABOUT PAGE ******************************************************/
 
 .aboutPage {
-    margin: 0;
-    padding: 0;
     height: 600px;
     width: 100%;
     display: flex;
@@ -148,21 +146,47 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 /* GAME PAGE ******************************************************/
 
 .gamePage {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
+    height: 600px;
     width: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
-#game {
+.containerGamePage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerGamePage a{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+
+/* fBird Page *************************/
+.fBird {
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* fBird Page End ********************/
+
+
+
+
+
+#game{
     width: 400px;
     height: 500px;
     border: 1px solid #181818;
     margin: auto;
     overflow: hidden;
+    background-color: white;
 }
 
-#block {
+#block{
     width: 50px;
     height: 500px;
     background-color: black;
@@ -176,7 +200,7 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
     100%{left: -50px;}
 }
 
-#hole {
+#hole{
     width: 50px;
     height: 150px;
     background-color: rgb(255, 255, 255);
@@ -186,27 +210,14 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
     animation: block 2s infinite linear;
 }
 
-#character {
+#character{
     width: 20px;
     height: 20px;
     background-color: rgb(255, 0, 0);
     position: absolute;
-    top: 1670px;
+    top: 100px;
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
