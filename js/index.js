@@ -43,3 +43,6 @@ function jump(){
         jumpCount++;
     }, 20);
 }
+
+
+
