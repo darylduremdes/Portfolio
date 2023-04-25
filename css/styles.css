@@ -18,6 +18,15 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 
 }
 
+.container{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 
@@ -110,13 +119,7 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 
 }
 
-.container{
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
+
 
 /* PAGE COVER END******************************************************/
 
@@ -124,25 +127,73 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 /* ABOUT PAGE ******************************************************/
 
 .aboutPage {
-    background-size: cover;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    height: 600px;
     width: 100%;
-    background-attachment: fixed;
-    position:relative;
-    margin-top: -65px;
+    display: flex;
+    align-items: center;
+
 }
 
-.containerAbout {
-    height: 1500px;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+.containerAboutPage {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 /* ABOUT PAGE END ******************************************************/
 
 
+/* GAME PAGE ******************************************************/
+
+.gamePage {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #181818;
+    margin: auto;
+    overflow: hidden;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 400px;}
+    100%{left: -50px;}
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 1670px;
+    border-radius: 50%;
+}
 
 
 
@@ -152,6 +203,14 @@ h1, h2, h3, h4, h5, h6, a, ul, li, ol, p {
 
 
 
+
+
+
+
+
+
+
+/* GAME PAGE END ******************************************************/
 
 
 
