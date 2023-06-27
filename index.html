@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Daryl C. Duremdes</title>
+    <title>Simple Coder</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,65 +10,107 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="navBrand" href="#">Daryl Duremdes</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <!-- Navbar ---------------------------------------->
+  <div class="navColor">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#Home">Home</a>
-                  </li>
+      <!-- LOGO / BRAND -->
+      <a href="#" class="navbar-brand">
+        <span class="logoFont">
+          SimpleCoder<span id="hashtag">#</span>
+        </span>
+        <!-- <img src="images/hashtag.svg" alt="SimpleCoder# Logo" width="30" height="26" class="logo hidden" /> -->
+      </a>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#About">About</a>
-                  </li>
+      <!-- Hamburger Button for small screen -->
+      <button 
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Projects">Projects</a>
-                  </li>
-        
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Resume">Resume</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>     <!-- end of navbar ---------------------------------------->
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav ms-auto">
 
-<!-- PAGE COVER ---------------------------------------------------------->
-    <div class="jumbotron">
-      <div id="jOverlay">
-      <div class="container">
-        <h1>Fluid jumbotron</h1>
-        <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <li>
+            <a class="nav-link" href="#">Hello</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+          <li class="secret">
+            <a class="nav-link secretFont" href="#">#</a>
+          </li>
+
+        </ul>
       </div>
-      </div>
-    </div> <!-- end of page cover ---------------------------------------->
 
-<!-- ABOUT PAGE ---------------------------------------------------------->
-    <div class="aboutPage">
-      <div class="containerAboutPage">
-        <h1>About</h1>
-        <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div> <!-- end of about ---------------------------------------->
 
-<!-- GAME PAGE ---------------------------------------------------------->
-    <div class="gamePage">
-      <div class="containerGamePage">
-        <h1>Games</h1>
-        <p>Want to play a game?</p>
-        <a href="games/FlappyBird.html" type="button" class="btn btn-info">Click Here!</a>
-      </div>
+    </nav>
+  </div>
+  <!-- end of navbar ---------------------------------------->
+
+  <!-- Hero Page ---------------------------------------->
+  <div class="firstDiv">
+    <div class="animated-text">
+      I'm a <span></span>
     </div>
-<!-- end of game ------------------------------------------------->
+
+    <div class="overlay1">
+      <img src="images/HeaderImage1.jpg" alt="" class="dada1">
+    </div>
+
+  
+
+  </div>
+  <!-- end of Hero Page ---------------------------------------->
+
+  <div class="testdiv2">
+    <h1>This is a test</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, excepturi! Rem repudiandae optio non voluptates iure eligendi tempora, veritatis ullam? In mollitia vitae fugiat pariatur sunt, excepturi cupiditate distinctio amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit itaque eligendi placeat corporis possimus atque earum quas, illum expedita obcaecati assumenda quo qui quisquam. Temporibus distinctio tempora suscipit aliquid?</p>
+  </div>
+
+  <div class="testdiv3">
+    <h1>This is a test</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, excepturi! Rem repudiandae optio non voluptates iure eligendi tempora, veritatis ullam? In mollitia vitae fugiat pariatur sunt, excepturi cupiditate distinctio amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit itaque eligendi placeat corporis possimus atque earum quas, illum expedita obcaecati assumenda quo qui quisquam. Temporibus distinctio tempora suscipit aliquid?</p>
+  </div>
+
+  <div class="testdiv4">
+    <h1>This is a test</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, excepturi! Rem repudiandae optio non voluptates iure eligendi tempora, veritatis ullam? In mollitia vitae fugiat pariatur sunt, excepturi cupiditate distinctio amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit itaque eligendi placeat corporis possimus atque earum quas, illum expedita obcaecati assumenda quo qui quisquam. Temporibus distinctio tempora suscipit aliquid?</p>
+  </div>
 
 
-    <srcipt src="js/index.js"></srcipt>
+  <div class="testdiv5">
+    <h1>This is a test</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, excepturi! Rem repudiandae optio non voluptates iure eligendi tempora, veritatis ullam? In mollitia vitae fugiat pariatur sunt, excepturi cupiditate distinctio amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit itaque eligendi placeat corporis possimus atque earum quas, illum expedita obcaecati assumenda quo qui quisquam. Temporibus distinctio tempora suscipit aliquid?</p>
+  </div>
+  
+
+
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
